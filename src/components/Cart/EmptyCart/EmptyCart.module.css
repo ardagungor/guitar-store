@@ -1,0 +1,12 @@
+.emptyCart {
+  height: 600px;
+  width: 100%;
+  text-align: center;
+  margin-left: 475px;
+}
+
+.text {
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 34px;
+}

@@ -1,0 +1,23 @@
+.main {
+  padding-top: 70px;
+  padding-bottom: 20px;
+  padding-left: 45px;
+  padding-right: 45px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding-bottom: 50px;
+  grid-column-gap: 25px;
+  grid-row-gap: 20px;
+  justify-items: stretch;
+  align-items: stretch;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+}

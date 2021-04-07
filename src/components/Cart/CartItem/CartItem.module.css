@@ -1,0 +1,47 @@
+.img {
+  width: 250px;
+  object-fit: contain;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+p {
+  font-size: 16px;
+}
+
+.flex {
+  margin-left: 25px;
+  margin-top: 25px;
+  height: 600px;
+  width: 450px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.4s;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.qtyAndButton {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.button:hover {
+  background-color: red;
+}
+
+@media screen and (max-width: 600px) {
+  .flex {
+    width: 300px;
+  }
+
+  .details {
+    font-size: 12px;
+  }
+}

@@ -1,24 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import Header from "./components/Header/Header";
+import Homepage from "./components/Homepage/Homepage"
+import Showcase from "./components/Showcase/Showcase";
+import Cart from "./components/Cart/Cart";
+import Guitars from "./components/Guitars/Guitars";
+import Bass from "./components/Bass/Bass";
+import Footer from "./components/Footer/Footer";
+import { Switch, Route, BrowserRouter, Redirect } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <div>
+        <Header />
+        <Switch>
+          <Route exact path="/" component={Homepage}/>
+          <Route exact path="/featured" component={Showcase} />
+          <Route exact path="/cart" component={Cart} />
+          <Route exact path="/guitars" component={Guitars} />
+          <Route exact path="/bass" component={Bass} />
+        </Switch>
+        <Footer />
+      </div>
+    </BrowserRouter>
   );
 }
 
