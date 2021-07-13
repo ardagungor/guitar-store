@@ -8,7 +8,7 @@ const Homepage = () => {
       <Link to="/featured">
         <div className={classes.card}>
           <img
-            src="https://www.station-musicshop.de/WebRoot/Store8/Shops/64398533/5E5D/224E/5983/CC9C/1117/0A0C/6D12/80A4/strandberg_b6-nt-1069-yellow.jpg"
+            src="https://thumbs.static-thomann.de/thumb/orig/pics/bdb/464783/14062337_800.jpg"
             className={classes.img}
           />
           <h2>Featured Products</h2>
